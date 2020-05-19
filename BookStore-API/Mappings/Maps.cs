@@ -14,7 +14,6 @@ namespace BookStore_API.Mappings
         {
             CreateMap<Author, AuthorDTO>().ReverseMap();
             CreateMap<Book, BookDTO>().ReverseMap();
-
         }
 
     }
