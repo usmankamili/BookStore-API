@@ -200,6 +200,13 @@ namespace BookStore_API.Controllers
             }
         }
 
+        private string GetControllerActionNames()
+        {
+            var controller = ControllerContext.ActionDescriptor.ControllerName;
+            var action = ControllerContext.ActionDescriptor.ActionName;
+            return $"{controller} - {action}";
+        }
+
 
         private ObjectResult InternalError(string message)
         {
